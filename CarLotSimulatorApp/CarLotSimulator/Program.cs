@@ -34,7 +34,7 @@ namespace CarLotSimulator
             car1.HonkNoise = "Beep, beep";
             car1.IsDriveable = false;
 
-            car1.MakeEngineNoise();
+            car1.MakeEngineNoise(car1.EngineNoise);
             car1.MakeHonkNoise();
 
             carLot1.ListOfCars.Add(car1);
@@ -51,8 +51,8 @@ namespace CarLotSimulator
                 HonkNoise = "Beeeeeeeeeeeeep",
                 IsDriveable = true
             };
-                    
-            car2.MakeEngineNoise();
+
+            car2.MakeEngineNoise(car2.EngineNoise);
             car2.MakeHonkNoise();
 
             carLot1.ListOfCars.Add(car2);
@@ -60,9 +60,9 @@ namespace CarLotSimulator
             Console.WriteLine();
 
             var car3 = new Car(2022, "Tesla", "Model S", "Purrrr", "Meep Meep", true);
-            
-            
-            car3.MakeEngineNoise();
+
+
+            car3.MakeEngineNoise(car3.EngineNoise);
             car3.MakeHonkNoise();
 
             carLot1.ListOfCars.Add(car3);
